@@ -551,25 +551,29 @@ text-transform: uppercase;
   .footer-form-block{
     margin-left: 93px;
   }
+
   .footer-form {
     display: flex;
   }
+
   .footer-label {
     margin-right: 12px;
   }
+
 .footer-input{
-  
 width: 358px;
 padding: 15px 16px;
 border: 1px solid rgba(255, 255, 255, 0.3);
-/* box-shadow:0px 4px 4px rgba(0, 0, 0, 0.15); */
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
 outline: transparent;
 background-color: transparent;
-transition: border-color 250ms var(--cubic-bezier);
+transition: border-color 250ms var(--cubic-bezier),
+outline 250ms var(--cubic-bezier);
 }
 .footer-input:focus{
   border-color:var(--accent-color);
+  outline:var(--accent-color);
 }
 
 
@@ -578,8 +582,6 @@ transition: border-color 250ms var(--cubic-bezier);
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
-
-
 
 .footer-form-btn{
   min-width: 200px;
